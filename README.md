@@ -5,11 +5,11 @@
 
  Clone repository
  
- `git clone git@github.com:react-native-village/dataStore.git`
+ `git clone https://github.com/fullstackserverless/startup.git`
  
 Let's go to the example folder
 
-`cd dataStore`
+`cd startup`
 
 Install dependencies
 
