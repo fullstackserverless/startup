@@ -1,10 +1,33 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { AppContainer, Input, Space, Button, Header, ButtonLink } from 'react-native-unicorn-uikit'
-import { DataStore } from '@aws-amplify/datastore'
+import { DataStore, DISCARD } from '@aws-amplify/datastore'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
 import { Job } from '../../models'
 import { goBack } from '../../constants'
+
+DataStore.configure({
+  errorHandler: (error) => {
+    console.warn('Unrecoverable error', { error })
+  },
+  conflictHandler: async (data) => {
+    // Example conflict handler
+    console.log('data', data)
+    const { modelConstructor } = data
+    if (modelConstructor === Job) {
+      const { remoteModel } = data
+      const { localModel } = data
+      const newModel = modelConstructor.copyOf(remoteModel, (d) => {
+        d.title = localModel.title
+      })
+      return newModel
+    }
+
+    return DISCARD
+  },
+  maxRecordsToSync: 30000,
+  fullSyncInterval: 60 // minutes
+})
 
 const JobAdd = ({ route, navigation }) => {
   const [loading, setLoading] = useState(false)
