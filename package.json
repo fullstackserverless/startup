@@ -25,6 +25,8 @@
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-appearance": "^0.3.3",
+    "react-native-bouncy-checkbox": "^0.1.2",
+    "react-native-dynamic-vector-icons": "^0.1.1",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-keychain": "^6.0.0",
     "react-native-reanimated": "^1.8.0",

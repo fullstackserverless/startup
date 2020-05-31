@@ -8788,6 +8788,16 @@ react-native-appearance@^0.3.3:
     invariant "^2.2.4"
     use-subscription "^1.0.0"
 
+react-native-bouncy-checkbox@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-bouncy-checkbox/-/react-native-bouncy-checkbox-0.1.2.tgz#6d2b0ec14f9db0b865a5ea1d7ea04f51bc2f8463"
+  integrity sha512-es1px7N4YG1nGouR+Z9vpbVZJmpr/ahDOz6kDK+N6XJJ28oJlytzciYUMALwA9K9w40fnOg1CqXzqYEYfxNdNg==
+
+react-native-dynamic-vector-icons@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-dynamic-vector-icons/-/react-native-dynamic-vector-icons-0.1.1.tgz#958c87872f6db7c1a25611bd5039ad7e9a0fb009"
+  integrity sha512-dne6ZS8S/rolrmN4RAGP1RlPBR9sDZSzpzXchBpRAqv2YUOLDcweSPBMoSbXH+0OAEIsM2oHzlsJbNydbVAJeQ==
+
 react-native-elements@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/react-native-elements/-/react-native-elements-0.19.1.tgz#f92b69d864a150215d01f81fe3c52a9cada83e45"

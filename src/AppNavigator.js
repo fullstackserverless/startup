@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import { Hello, SignUp, SignIn, ConfirmSignUp, User, Forgot, ForgotPassSubmit } from './screens/Authenticator'
+import { RollSignup } from './screens/Authenticator/RollSignup'
 
 const Stack = createStackNavigator()
 
@@ -14,6 +15,7 @@ const AppNavigator = () => {
     >
       <Stack.Screen name="HELLO" component={Hello} />
       <Stack.Screen name="SIGN_UP" component={SignUp} />
+      <Stack.Screen name="ROLL_SIGNUP" component={RollSignup} />
       <Stack.Screen name="SIGN_IN" component={SignIn} />
       <Stack.Screen name="FORGOT" component={Forgot} />
       <Stack.Screen name="FORGOT_PASSWORD_SUBMIT" component={ForgotPassSubmit} />

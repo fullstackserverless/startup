@@ -17,7 +17,7 @@ const ConfirmSignUp = ({ route, navigation }) => {
       const { email, password } = route.params
       await Auth.confirmSignUp(email, code, { forceAliasCreation: true })
       const user = await Auth.signIn(email, password)
-      user && onScreen('USER', navigation)()
+      user && onScreen('ROLL_SIGNUP', navigation)()
       setLoading(false)
     } catch (err) {
       setLoading(false)
