@@ -185,7 +185,7 @@ PODS:
   - React-jsinspector (0.61.5)
   - react-native-appearance (0.3.3):
     - React
-  - react-native-netinfo (5.7.0):
+  - react-native-netinfo (5.9.2):
     - React
   - react-native-safe-area-context (0.7.3):
     - React
@@ -228,6 +228,8 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.5)
   - RNAWSCognito (4.2.1):
     - JKBigInteger2 (= 0.0.5)
+    - React
+  - RNCAsyncStorage (1.11.0):
     - React
   - RNCMaskedView (0.1.8):
     - React
@@ -276,6 +278,7 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNAWSCognito (from `../node_modules/amazon-cognito-identity-js`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNKeychain (from `../node_modules/react-native-keychain`)
@@ -348,6 +351,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNAWSCognito:
     :path: "../node_modules/amazon-cognito-identity-js"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-community/async-storage"
   RNCMaskedView:
     :path: "../node_modules/@react-native-community/masked-view"
   RNGestureHandler:
@@ -381,7 +386,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: d5525f9ed5f782fdbacb64b9b01a43a9323d2386
   React-jsinspector: fa0ecc501688c3c4c34f28834a76302233e29dc0
   react-native-appearance: 98e4530857c366de634f58e5db91bf97feaa96ff
-  react-native-netinfo: becc6dd2bb2335aa85a8adbaefc8e206125e6177
+  react-native-netinfo: cb74e17062b2af5a16a4b137f32495f241df1a8e
   react-native-safe-area-context: e200d4433aba6b7e60b52da5f37af11f7a0b0392
   react-native-spinkit: da294fd828216ad211fe36a5c14c1e09f09e62db
   React-RCTActionSheet: 600b4d10e3aea0913b5a92256d2719c0cdd26d76
@@ -395,6 +400,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
   RNAWSCognito: 39eb43a92666c328d303fb11c19fe0b47e106db9
+  RNCAsyncStorage: d059c3ee71738c39834a627476322a5a8cd5bf36
   RNCMaskedView: 4383c3140f1235391fd6029968c166f09ddd0973
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
   RNKeychain: bf2d7e9a0ae7a073c07770dd2aa6d11c67581733
@@ -405,4 +411,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 9ca4bce392ca01ad8dfa97c2e57238c4a560e275
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.2

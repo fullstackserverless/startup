@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "react-native start",
     "ios": "react-native run-ios --simulator='iPhone SE'",
     "android": "react-native run-android",
     "lint": "esw src/**",
@@ -12,8 +13,10 @@
   "precommit": "lint",
   "dependencies": {
     "@aws-amplify/core": "^3.2.3",
+    "@aws-amplify/datastore": "^2.2.3",
+    "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "^0.1.8",
-    "@react-native-community/netinfo": "^5.7.0",
+    "@react-native-community/netinfo": "^5.9.2",
     "@react-navigation/native": "^5.1.5",
     "@react-navigation/native-stack": "^5.0.5",
     "@react-navigation/stack": "^5.2.10",
