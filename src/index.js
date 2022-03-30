@@ -4,7 +4,7 @@ import * as Keychain from 'react-native-keychain'
 import { ThemeProvider, DarkTheme, LightTheme } from 'react-native-unicorn-uikit'
 import { useColorScheme } from 'react-native-appearance'
 import AppNavigator from './AppNavigator'
-import awsconfig from '../aws-exports'
+import awsconfig from './aws-exports'
 
 const MEMORY_KEY_PREFIX = '@MyStorage:'
 let dataMemory = {}
